@@ -35,17 +35,6 @@
     <UiGradientDivider class="container my-16" />
 
     <!-- TODO: Review best implementation of blog section -->
-    <!-- Blog Preview Section -->
-    <!-- <UiContainer class="container mx-auto py-16">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold text-foreground mb-4">Latest Insights</h2>
-        <p class="text-lg text-muted-foreground max-w-2xl mx-auto">
-          Thoughts on software engineering, system design, and technical leadership.
-        </p>
-
-      </div>
-      <ContentBlogBlogpage />
-    </UiContainer> -->
 
     <UiGradientDivider class="container my-16" />
 

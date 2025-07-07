@@ -33,7 +33,7 @@
           </div>
         </div>
         <h2 class="text-2xl font-bold tracking-tight sm:text-3xl lg:text-4xl xl:text-5xl py-4 my-6">
-          <span class="bg-gradient-to-r from-foreground via-foreground/90 to-foreground/70 bg-clip-text text-transparent">
+          <span class="bg-gradient-to-r from-white via-white/90 to-white/70 bg-clip-text text-transparent">
             Learn. Build.
           </span>
           <br />

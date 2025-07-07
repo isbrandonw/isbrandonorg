@@ -18,18 +18,19 @@
           <div>
             <h3 class="pl-4 text-2xl font-semibold text-foreground mb-4">My Journey</h3>
             <p class="pl-4 text-muted-foreground leading-relaxed">
-              I'm a passionate software engineer with extensive experience in full-stack development, 
-              system architecture, and technical leadership. My journey spans from building scalable 
-              web applications to mentoring development teams and driving technical strategy.
+              My journey into software engineering began with a fascination for web applications, leading me to explore full-stack development using Nuxt.js, Vue.js, and Node.js. Beyond the web, I'm also diving into the world of embedded systems, where I'm gaining experience with C/C++. This allows me to connect software to hardware and explore a wider range of creative possibilities. I'm driven to continually learn and build impactful projects across different domains.
             </p>
           </div>
           
           <div>
             <h3 class="pl-4 text-2xl font-semibold text-foreground mb-4">Mission</h3>
             <p class="pl-4 text-muted-foreground leading-relaxed">
-              I believe in the power of continuous learning and knowledge sharing. Through this platform, 
-              I document my experiences, share technical insights, and contribute to the developer community. 
-              My goal is to bridge the gap between complex technical concepts and practical implementation.
+              <ul class="list-disc list-inside space-y-2 mt-4">
+                <li>Building innovative solutions in web (Nuxt.js, Vue.js) and embedded systems (C/C++)</li>
+                <li>Sharing knowledge gained to make technical concepts accessible</li>
+                <li>Fostering growth and connection within the developer community</li>
+                <li>Inspiring and connecting with others on their tech learning adventures</li>
+              </ul>
             </p>
           </div>
         </div>
@@ -136,30 +137,30 @@ const cloudTech = [
 const highlights = [
   {
     id: 1,
-    title: 'Technical Leadership Role',
+    title: 'ESP32-H2 Development',
     date: 'Present',
-    description: 'Leading engineering teams, architecting scalable systems, and driving technical strategy for complex applications.',
-    icon: 'lucide:crown'
+    description: 'Exploring embedded systems development with ESP32-H2 SoC, focusing on IoT applications, sensor integration, and low-power wireless communication protocols.',
+    icon: 'lucide:rocket'
   },
   {
     id: 2,
-    title: 'Full-Stack Architecture',
+    title: 'Expanding Full-Stack Skills',
     date: '2023',
-    description: 'Designed and implemented microservices architecture serving millions of users with 99.9% uptime.',
+    description: 'Worked across the stack with modern frameworks like Vue, Nuxt, and Node.js, building features from UI to backend APIs.',
     icon: 'lucide:layers'
   },
   {
     id: 3,
-    title: 'Open Source Contributions',
+    title: 'Open Source Participation',
     date: '2022',
-    description: 'Active contributor to open source projects and maintainer of several npm packages used by the community.',
+    description: 'Contributed to open source projects, learning from the community and improving my skills through real-world code reviews.',
     icon: 'lucide:git-branch'
   },
   {
     id: 4,
-    title: 'Mentorship & Teaching',
+    title: 'Continuous Learning',
     date: '2021',
-    description: 'Mentored 15+ junior developers and conducted technical workshops on modern web development practices.',
+    description: 'Completed online courses, attended workshops, and built personal projects to deepen my understanding of web technologies.',
     icon: 'lucide:graduation-cap'
   }
 ];
@@ -167,17 +168,17 @@ const highlights = [
 const values = [
   {
     title: 'Continuous Learning',
-    description: 'Technology evolves rapidly. I stay current with industry trends and continuously expand my skill set to deliver cutting-edge solutions.',
+    description: "I'm always exploring new technologies and approaches, eager to grow my skills and stay up to date with the latest in software development.",
     icon: 'lucide:book-open'
   },
   {
     title: 'Code Quality',
-    description: 'Writing clean, maintainable, and well-tested code is fundamental. Quality over quantity, always.',
+    description: "I strive to write clean, maintainable code and value learning best practices from experienced engineers.",
     icon: 'lucide:shield-check'
   },
   {
     title: 'Team Collaboration',
-    description: 'Great software is built by great teams. I believe in fostering collaborative environments where everyone can thrive.',
+    description: "I enjoy working with others, sharing ideas, and learning from teammates to build better software together.",
     icon: 'lucide:users'
   }
 ];

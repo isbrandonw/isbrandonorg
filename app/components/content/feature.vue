@@ -3,22 +3,30 @@
       <div
         v-for="(f, i) in features"
         :key="i"
-        class="group flex flex-col items-center justify-center"
+        class="group flex flex-col items-start rounded-xl border border-zinc-800 bg-zinc-900/60 p-6 shadow-sm transition hover:shadow-lg hover:border-primary"
       >
-        <div class="flex h-12 w-12 items-center justify-center rounded-md border">
+        <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 mb-4">
           <Icon
             :name="f.icon"
-            class="h-5 w-5 transition-colors group-hover:text-primary lg:h-6 lg:w-6"
+            class="h-6 w-6 text-primary"
           />
         </div>
         <h3
-          class="mt-4 text-balance text-center text-lg font-semibold lg:mt-5 lg:text-xl"
+          class="text-xl font-bold text-foreground mb-3"
           v-html="f.title"
         />
-        <p
-          class="mt-1 max-w-[400px] text-balance text-center text-muted-foreground lg:mt-2 lg:max-w-none"
-          v-html="f.description"
-        />
+        <ul class="space-y-2 list-none pl-0 w-full">
+          <li
+            v-for="(point, idx) in f.description"
+            :key="idx"
+            class="flex items-start text-left text-muted-foreground"
+          >
+            <span class="mt-1 mr-2 flex-shrink-0">
+              <Icon name='lucide:dot' class="h-4 w-4 text-primary" />
+            </span>
+            <span v-html="point" />
+          </li>
+        </ul>
       </div>
     </UiContainer>
   </template>
@@ -27,24 +35,43 @@
 const { $config } = useNuxtApp();
 const COMPANY_NAME = $config.public.COMPANY_NAME;
 
-    const features = [
-      {
-        icon: "lucide:code-2",
-        title: "Full-Stack Development",
-        description:
-          "Continually learning how to build real projects from start to finish. Nuxt, Vue, and Node.js. ",
-      },
-      {
-        icon: "lucide:users",
-        title: "Technical Leadership",
-        description:
-          "Working together with other developers, learning from teammates, and understanding how to solve problems as a group.",
-      },
-      {
-        icon: "lucide:lightbulb",
-        title: "Knowledge Sharing",
-        description: `Sharing what I learn, writing down helpful tips in Confluence, and supporting others makes my world go round.`,
-      },
-    ];
+type Feature = {
+  icon: string;
+  title: string;
+  description: string[];
+};
+
+const features: Feature[] = [
+  // Full-Stack Web Application Development
+  {
+    icon: "lucide:code-2",
+    title: "Full-Stack Web Application Development",
+    description: [
+      "Passionate about building robust and scalable web applications from concept to deployment.",
+      "Current tech stack: <b>Nuxt.js</b>, <b>Vue.js</b> for UI, <b>Node.js</b> for server-side logic.",
+      "Exploring modern UI libraries like <b>Shadcn UI</b> and platforms like <b>Vercel</b> and <b>Netlify</b> for deployment."
+    ]
+  },
+  // Embedded Systems and IoT Development
+  {
+    icon: "lucide:cpu",
+    title: "Embedded Systems and IoT Development",
+    description: [
+      "Growing interest in embedded systems and the Internet of Things.",
+      "Exploring development with <b>ESP32</b> SoC, <b>FreeRTOS</b>, and related toolchains.",
+      "Learning how software interacts with the physical world to create innovative solutions."
+    ]
+  },
+  // Entrepreneurial Drive & Problem Solving
+  {
+    icon: "lucide:briefcase",
+    title: "Entrepreneurial Drive & Problem Solving",
+    description: [
+      "Strong entrepreneurial mindset and drive to launch new projects.",
+      "Exploring small business resources and e-commerce strategies.",
+      "Enjoy tackling challenges and finding creative solutions through code and innovation."
+    ]
+  }
+];
   </script>
   
