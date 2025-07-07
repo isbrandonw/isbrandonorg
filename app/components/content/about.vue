@@ -22,17 +22,15 @@
             </p>
           </div>
           
-          <div>
-            <h3 class="pl-4 text-2xl font-semibold text-foreground mb-4">Mission</h3>
-            <p class="pl-4 text-muted-foreground leading-relaxed">
-              <ul class="list-disc list-inside space-y-2 mt-4">
-                <li>Building innovative solutions in web (Nuxt.js, Vue.js) and embedded systems (C/C++)</li>
-                <li>Sharing knowledge gained to make technical concepts accessible</li>
-                <li>Fostering growth and connection within the developer community</li>
-                <li>Inspiring and connecting with others on their tech learning adventures</li>
-              </ul>
-            </p>
-          </div>
+          <Ui class="pt-4">
+            <h3 class="p-4 pl-4 text-2xl font-semibold text-foreground mb-4">Mission</h3>
+            <ul class="list-disc list-inside space-y-2 mt-4 pl-8">
+              <li>Building innovative solutions in web (Nuxt.js, Vue.js) and embedded systems (C/C++)</li>
+              <li>Sharing knowledge gained to make technical concepts accessible</li>
+              <li>Fostering growth and connection within the developer community</li>
+              <li>Inspiring and connecting with others on their tech learning adventures</li>
+            </ul>
+          </Ui>
         </div>
 
         <!-- Skills/Tech Stack -->
@@ -119,6 +117,8 @@
 </template>
 
 <script lang="ts" setup>
+import { UiCard } from '#components';
+
 const frontendTech = [
   'React', 'Vue.js', 'TypeScript', 'Next.js', 'Nuxt.js',
   'Tailwind CSS', 'JavaScript'
