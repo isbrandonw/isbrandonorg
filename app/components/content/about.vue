@@ -117,8 +117,6 @@
 </template>
 
 <script lang="ts" setup>
-import { UiCard } from '#components';
-
 const frontendTech = [
   'React', 'Vue.js', 'TypeScript', 'Next.js', 'Nuxt.js',
   'Tailwind CSS', 'JavaScript'
@@ -131,7 +129,7 @@ const backendTech = [
 
 const cloudTech = [
   'Docker', 'Kubernetes', 'CI/CD', 'Terraform',
-  'GitHub Actions', 'Vercel', 'Supabase', 'AWS'
+  'GitHub Actions', 'Vercel', 'DevOps', 'AWS'
 ];
 
 const highlights = [
