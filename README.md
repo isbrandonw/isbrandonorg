@@ -48,7 +48,7 @@ npm generate
 
 This project is configured for static site generation on Vercel:
 
-- **Build Command**: `pnpm generate`
+- **Build Command**: `npm run generate`
 - **Output Directory**: `.output/public`
 - **Framework**: Nuxt.js
 
@@ -56,8 +56,7 @@ The site will be deployed as a static site (no server-side functions initially).
 
 ## Environment Variables
 
-For AI features (optional):
-- `ANTHROPIC_API_KEY` - Claude API key for AI components
+Currently no environment variables are required for the basic site functionality.
 
 ## Features
 

@@ -7,6 +7,9 @@ export default defineNuxtConfig({
   experimental: { typedPages: true },
   future: { compatibilityVersion: 4 },
   devtools: { enabled: true },
+  nitro: {
+    preset: 'vercel'
+  },
   runtimeConfig: {
     public: {
       COMPANY_NAME: process.env.COMPANY_NAME || 'isbrandonorg'
