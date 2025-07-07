@@ -1,0 +1,32 @@
+  Follow the same conventions as CLAUDE.md:
+  - Use ui-thing components before creating new ones
+  - Follow Tailwind CSS conventions
+  - Maintain TypeScript strict mode
+
+  4. Task Handoff Strategy
+
+  - Start with Claude Code: Initial setup, architecture decisions
+  - Switch to Cursor: Fast iteration, small fixes, autocomplete
+  - Return to Claude Code: Complex debugging, major refactors
+
+  5. Version Control Discipline
+
+  - Commit Claude Code changes separately from Cursor changes
+  - Use descriptive commit messages indicating which tool was used
+  - Review all AI-generated code before committing
+
+  6. Tool Selection Guidelines
+
+  Use Claude Code for:
+  - Multi-file refactoring
+  - Complex debugging
+  - Architecture decisions
+  - Documentation generation
+
+  Use Cursor for:
+  - Single-file edits
+  - Autocomplete assistance
+  - Quick bug fixes
+  - Rapid prototyping
+
+  This approach maximizes both tools' strengths while maintaining code quality and consistency.

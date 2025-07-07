@@ -1,0 +1,11 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Rule to manage errors in Nuxt:
+
+- Always rerun and ensure no errors
+- If errors fix them
+- Alway document your changes.
+
