@@ -122,11 +122,11 @@ npm run rm:recommendations  # Remove VSCode extension recommendations
 ## Deployment
 
 ### Vercel Configuration
-- **Preset**: Configured for Vercel static deployment via Nitro
-- **Build Command**: `npm run generate`
-- **Output Directory**: `.output/public`
+- **Build Command**: `npm run build` (serverless deployment)
+- **Dev Command**: `npm run dev`
 - **Install Command**: `npm install`
 - **Framework**: Nuxt.js auto-detected
+- **Output**: Server-side rendering with Nitro
 
 ### Deployment Steps
 1. Install Vercel CLI: `npm i -g vercel`
@@ -136,6 +136,6 @@ npm run rm:recommendations  # Remove VSCode extension recommendations
 ### Build Verification
 Test the build locally before deploying:
 ```bash
-npm run generate     # Generate static site
-npx serve .vercel/output/static  # Preview build locally
+npm run build        # Build for production
+node .output/server/index.mjs  # Preview build locally
 ```
