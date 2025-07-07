@@ -22,7 +22,7 @@
             </p>
           </div>
           
-          <Ui class="pt-4">
+          <div class="pt-4">
             <h3 class="p-4 pl-4 text-2xl font-semibold text-foreground mb-4">Mission</h3>
             <ul class="list-disc list-inside space-y-2 mt-4 pl-8">
               <li>Building innovative solutions in web (Nuxt.js, Vue.js) and embedded systems (C/C++)</li>
@@ -30,7 +30,7 @@
               <li>Fostering growth and connection within the developer community</li>
               <li>Inspiring and connecting with others on their tech learning adventures</li>
             </ul>
-          </Ui>
+          </div>
         </div>
 
         <!-- Skills/Tech Stack -->
