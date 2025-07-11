@@ -57,18 +57,6 @@
 
         <!-- Actions: Theme Switcher & GitHub -->
         <div class="flex items-center gap-2">
-          <UiButton
-            external
-            to="https://github.com/BayBreezy/nuxt-ui-thing-starter"
-            target="_blank"
-            variant="ghost"
-            size="icon-sm"
-            title="View on github"
-            aria-label="View on GitHub"
-          >
-            <span class="sr-only">View on github</span>
-            <Icon name="lucide:github" class="size-4" />
-          </UiButton>
           <UiDropdownMenu>
             <UiDropdownMenuTrigger as-child>
               <UiButton class="h-9 w-9" variant="ghost" size="icon" title="Theme switcher" aria-label="Theme switcher">

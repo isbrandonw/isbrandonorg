@@ -52,13 +52,27 @@
   
       <!-- CTA Buttons -->
       <div class="relative z-10 mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center lg:mt-12 animate-fadeIn" style="animation-delay: 0.4s;">
-        <UiButton as="a" href="#about" size="lg" class="group px-8 py-4 text-lg font-medium bg-primary hover:bg-primary/90 transition-all duration-200 hover:scale-105 scroll-smooth">
+        <UiButton
+          as="a"
+          href="#about"
+          size="lg"
+          class="group px-8 py-4 text-lg font-semibold bg-gradient-to-r from-zinc-900 to-zinc-800 text-white shadow-lg hover:from-zinc-800 hover:to-zinc-700 transition-all duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-zinc-500/60 focus:ring-offset-2 border border-zinc-700"
+          aria-label="Learn more about Brandon"
+        >
           <Icon name="lucide:lightbulb" class="mr-2 h-5 w-5 group-hover:rotate-12 transition-transform" />
           About
+          <Icon name="lucide:arrow-right" class="ml-3 h-5 w-5 group-hover:translate-x-1 transition-transform" />
         </UiButton>
-        <UiButton as="a" href="#projects" size="lg" variant="outline" class="group px-8 py-4 text-lg font-medium border-primary/20 hover:border-primary/40 hover:bg-primary/5 transition-all duration-200 hover:scale-105 scroll-smooth">
-          <Icon name="lucide:github" href="#projects" class="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
-          View Projects
+        <UiButton
+          as="a"
+          href="#contact"
+          size="lg"
+          variant="outline"
+          class="group px-8 py-4 text-lg font-semibold border-primary/30 text-primary hover:border-primary/60 hover:bg-primary/5 transition-all duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:ring-offset-2"
+          aria-label="Contact Brandon"
+        >
+          <Icon name="lucide:mail" class="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
+          Contact
         </UiButton>
       </div>
 
@@ -70,6 +84,7 @@
   </template>
   
   <script lang="ts" setup>
+import { useNuxtApp } from 'nuxt/app';
 const { $config } = useNuxtApp();
 const COMPANY_NAME = $config.public.COMPANY_NAME;
 </script>

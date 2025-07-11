@@ -52,6 +52,9 @@ export default defineNuxtConfig({
           defer: true,
         },
       ],
+      link: [
+        { rel: 'icon', type: 'image/png', href: '/imgs/isbrandon-logo.png' }
+      ],
     },
   },
 

@@ -51,10 +51,12 @@ npm run rm:recommendations  # Remove VSCode extension recommendations
 - **`public/`** - Static assets
 
 ### Key Configuration Files
-- **`nuxt.config.ts`** - Nuxt configuration with experimental typedPages, runtime config for COMPANY_NAME
+- **`nuxt.config.ts`** - Nuxt configuration with experimental typedPages, runtime config for COMPANY_NAME, PDF.js CDN integration, custom favicon
 - **`tailwind.config.js`** - Zinc theme with CSS custom properties, custom animations
 - **`ui-thing.config.ts`** - UI component library configuration (Nuxt 4 compatible)
 - **`.prettierrc`** - Prettier config with import sorting and Tailwind class sorting
+- **`vercel.json`** - Vercel deployment configuration with build commands
+- **`app/utils/seo.ts`** - Centralized SEO constants and site metadata
 
 ### Technology Stack Details
 - **Theme**: Zinc theme with dark mode support via `@nuxtjs/color-mode`
@@ -102,11 +104,18 @@ npm run rm:recommendations  # Remove VSCode extension recommendations
 ### SEO Configuration
 - Site constants defined in `app/utils/seo.ts`
 - Title: "isbrandon.org"
-- Tagline: "Learn. Build. Repeat."
+- Tagline: "Learn. Build. Repeat."  
 - Company Name: "isbrandon" (from runtime config)
+- Description: "Software engineer sharing insights on web development, system design, and tech leadership"
+- Custom favicon: `/imgs/isbrandon-logo.png`
 
 ## Development Notes
 
+### Error Handling and Quality Assurance
+- **Always rerun and ensure no errors** - verify builds pass before committing
+- **Fix all errors immediately** - don't leave broken code in any state
+- **Document all changes** - especially when fixing errors or issues
+- **Commit Claude Code changes separately** from Cursor changes for better tracking
 
 ### Performance Features
 - Component auto-imports enabled
@@ -139,3 +148,9 @@ Test the build locally before deploying:
 npm run build        # Build for production
 node .output/server/index.mjs  # Preview build locally
 ```
+
+### Deployment Configuration Notes
+- README.md shows static site generation (`npm run generate`) but actual `vercel.json` uses `npm run build`
+- Project supports both static generation and server-side rendering
+- Current deployment uses serverless functions with Nitro SSR output
+- Custom favicon and logo assets stored in `/public/imgs/`
