@@ -17,19 +17,97 @@
         <div class="space-y-6">
           <div>
             <h3 class="pl-4 text-2xl font-semibold text-foreground mb-4">My Journey</h3>
-            <p class="pl-4 text-muted-foreground leading-relaxed">
-              My journey into software engineering began with a fascination for web applications, leading me to explore full-stack development using Nuxt.js, Vue.js, and Node.js. Beyond the web, I'm also diving into the world of embedded systems, where I'm gaining experience with C/C++. This allows me to connect software to hardware and explore a wider range of creative possibilities. I'm driven to continually learn and build impactful projects across different domains.
-            </p>
+            <div class="pl-4 space-y-4">
+              <p class="text-muted-foreground leading-relaxed">
+                My software engineering journey began with a fascination for understanding how things work.
+                When I first started learning C/C++ and web development, I found it challenging, but my curiosity kept me going until I figured things out.
+              </p>
+              <p class="text-muted-foreground leading-relaxed">
+                This drive to solve problems led me to explore full-stack development with Nuxt.js, Vue.js, and Node.js, and
+                what it takes to design systems that are scalable and maintainable.
+              </p>
+              <p class="text-muted-foreground leading-relaxed">
+                I started learning object-oriented programming early on with C/C++. My focus has always been on software design and
+                core concepts, and you soon realize that what coding language doesn't matter as much as understanding the
+                fundamental data structures that all languages manipulate. A more plain example is C++ and Rust. Learning any of them
+                will have a short learning curve.
+              </p>
+              <p class="text-muted-foreground leading-relaxed">
+                I eventually found myself wanting to control the physical world which led me to embedded systems,
+                which lets me connect software directly to hardware. This opens up exciting new creative possibilities to make web
+                development all play nice with my PCB and electrical components.
+              </p>
+              <p class="text-muted-foreground leading-relaxed">
+                I cannot help buy to be continuously learning and building projects that make a real impact across
+                different areas of technology.
+              </p>
+            </div>
           </div>
-          
           <div class="pt-4">
-            <h3 class="p-4 pl-4 text-2xl font-semibold text-foreground mb-4">Mission</h3>
-            <ul class="list-disc list-inside space-y-2 mt-4 pl-8">
-              <li>Building innovative solutions in web (Nuxt.js, Vue.js) and embedded systems (C/C++)</li>
-              <li>Sharing knowledge gained to make technical concepts accessible</li>
-              <li>Fostering growth and connection within the developer community</li>
-              <li>Inspiring and connecting with others on their tech learning adventures</li>
-            </ul>
+            <UiCard class="bg-background/80 border border-border/40 rounded-xl shadow-lg p-6 mb-6">
+              <div class="flex items-center gap-3 mb-4">
+                <span class="inline-flex items-center justify-center rounded-full bg-primary/10 text-primary p-2">
+                  <Icon name="lucide:heart-handshake" class="h-6 w-6" />
+                </span>
+                <h3 class="text-2xl font-semibold text-foreground tracking-tight">Mission</h3>
+              </div>
+              <div>
+                <ul class="space-y-4">
+                  <li class="flex items-start gap-3">
+                    <span class="mt-1">
+                      <Icon name="lucide:cpu" class="h-5 w-5 text-primary" />
+                    </span>
+                    <span class="text-base text-muted-foreground">
+                      Embedded systems (C/C++) &mdash; building innovative solutions in web (Nuxt.js, Vue.js)
+                    </span>
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="mt-1">
+                      <Icon name="lucide:book-open" class="h-5 w-5 text-primary" />
+                    </span>
+                    <span class="text-base text-muted-foreground">
+                      Sharing knowledge to make technical concepts accessible
+                    </span>
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="mt-1">
+                      <Icon name="lucide:rocket" class="h-5 w-5 text-primary" />
+                    </span>
+                    <span class="text-base text-muted-foreground">
+                      Continuously learning and building projects that make a real impact across technology
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </UiCard>
+            <div class="bg-background/80 border border-border/40 rounded-xl shadow-sm p-6">
+              <ul class="space-y-4">
+                <li class="flex items-start gap-3">
+                  <span class="mt-1">
+                    <Icon name="lucide:cpu" class="h-5 w-5 text-primary" />
+                  </span>
+                  <span class="text-base text-muted-foreground">
+                    Embedded systems (C/C++) &mdash; building innovative solutions in web (Nuxt.js, Vue.js)
+                  </span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="mt-1">
+                    <Icon name="lucide:book-open" class="h-5 w-5 text-primary" />
+                  </span>
+                  <span class="text-base text-muted-foreground">
+                    Sharing knowledge to make technical concepts accessible
+                  </span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="mt-1">
+                    <Icon name="lucide:rocket" class="h-5 w-5 text-primary" />
+                  </span>
+                  <span class="text-base text-muted-foreground">
+                    Continuously learning and building projects that make a real impact across technology
+                  </span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 
@@ -135,30 +213,30 @@ const cloudTech = [
 const highlights = [
   {
     id: 1,
-    title: 'ESP32-H2 Development',
-    date: 'Present',
-    description: 'Exploring embedded systems development with ESP32-H2 SoC, focusing on IoT applications, sensor integration, and low-power wireless communication protocols.',
-    icon: 'lucide:rocket'
+    title: 'Technical Program Analyst',
+    date: '2022 - Present',
+    description: 'As a Technical Support Engineer, I served as the primary technical contact for over 80 C/C++ development teams. My role involved in-depth systems analysis, ensuring regulatory compliance with standards like MISRA and AUTOSAR, and improving processes through automation.',
+    icon: 'lucide:briefcase'
   },
   {
     id: 2,
-    title: 'Expanding Full-Stack Skills',
-    date: '2023',
-    description: 'Worked across the stack with modern frameworks like Vue, Nuxt, and Node.js, building features from UI to backend APIs.',
-    icon: 'lucide:layers'
+    title: 'Process Automation & Improvement',
+    date: '2019 - 2022',
+    description: 'During my time as a Program Analyst Intern and in my subsequent roles, I focused on identifying system inefficiencies. I developed automated solutions using Python and Bash to optimize workflows, enhance program delivery, and ensure data accuracy.',
+    icon: 'lucide:cogs'
   },
   {
     id: 3,
-    title: 'Open Source Participation',
-    date: '2022',
-    description: 'Contributed to open source projects, learning from the community and improving my skills through real-world code reviews.',
-    icon: 'lucide:git-branch'
+    title: 'Systems & Technical Analysis',
+    date: '2020 - 2022',
+    description: 'My education and early career were focused on systems analysis. I have experience with embedded systems, CI/CD pipelines, and utilizing tools like Git for version control. I am proficient in analyzing system architecture and managing databases with SQL.',
+    icon: 'lucide:database'
   },
   {
     id: 4,
-    title: 'Continuous Learning',
-    date: '2021',
-    description: 'Completed online courses, attended workshops, and built personal projects to deepen my understanding of web technologies.',
+    title: 'Computer Science Education',
+    date: '2015 - 2022',
+    description: 'I earned a Bachelor of Science in Computer Science from California State University, San Bernardino, following an Associate of Science from Riverside City College. My coursework included Systems Analysis, Database Management, and Data Structures & Algorithms.',
     icon: 'lucide:graduation-cap'
   }
 ];
