@@ -43,7 +43,12 @@
               </p>
             </div>
           </div>
-          <div class="pt-4">
+        </div>
+
+        <!-- Skills/Tech Stack & Mission -->
+        <div class="space-y-6">
+          <!-- Mission Section -->
+          <div>
             <UiCard class="bg-background/80 border border-border/40 rounded-xl shadow-lg p-6 mb-6">
               <div class="flex items-center gap-3 mb-4">
                 <span class="inline-flex items-center justify-center rounded-full bg-primary/10 text-primary p-2">
@@ -80,66 +85,38 @@
                 </ul>
               </div>
             </UiCard>
-            <div class="bg-background/80 border border-border/40 rounded-xl shadow-sm p-6">
-              <ul class="space-y-4">
-                <li class="flex items-start gap-3">
-                  <span class="mt-1">
-                    <Icon name="lucide:cpu" class="h-5 w-5 text-primary" />
-                  </span>
-                  <span class="text-base text-muted-foreground">
-                    Embedded systems (C/C++) &mdash; building innovative solutions in web (Nuxt.js, Vue.js)
-                  </span>
-                </li>
-                <li class="flex items-start gap-3">
-                  <span class="mt-1">
-                    <Icon name="lucide:book-open" class="h-5 w-5 text-primary" />
-                  </span>
-                  <span class="text-base text-muted-foreground">
-                    Sharing knowledge to make technical concepts accessible
-                  </span>
-                </li>
-                <li class="flex items-start gap-3">
-                  <span class="mt-1">
-                    <Icon name="lucide:rocket" class="h-5 w-5 text-primary" />
-                  </span>
-                  <span class="text-base text-muted-foreground">
-                    Continuously learning and building projects that make a real impact across technology
-                  </span>
-                </li>
-              </ul>
-            </div>
           </div>
-        </div>
 
-        <!-- Skills/Tech Stack -->
-        <div class="space-y-6">
-          <h3 class="text-2xl font-semibold text-foreground mb-6">Tech Stack & Expertise</h3>
-          
-          <div class="space-y-4">
-            <div>
-              <h4 class="font-medium text-foreground mb-2">Frontend</h4>
-              <div class="flex flex-wrap gap-2">
-                <UiBadge v-for="tech in frontendTech" :key="tech" variant="secondary" class="text-sm">
-                  {{ tech }}
-                </UiBadge>
-              </div>
-            </div>
+          <!-- Tech Stack Section -->
+          <div>
+            <h3 class="text-2xl font-semibold text-foreground mb-6">Tech Stack & Expertise</h3>
             
-            <div>
-              <h4 class="font-medium text-foreground mb-2">Backend</h4>
-              <div class="flex flex-wrap gap-2">
-                <UiBadge v-for="tech in backendTech" :key="tech" variant="secondary" class="text-sm">
-                  {{ tech }}
-                </UiBadge>
+            <div class="space-y-4">
+              <div>
+                <h4 class="font-medium text-foreground mb-2">Frontend</h4>
+                <div class="flex flex-wrap gap-2">
+                  <UiBadge v-for="tech in frontendTech" :key="tech" variant="secondary" class="text-sm">
+                    {{ tech }}
+                  </UiBadge>
+                </div>
               </div>
-            </div>
-            
-            <div>
-              <h4 class="font-medium text-foreground mb-2">Cloud & DevOps</h4>
-              <div class="flex flex-wrap gap-2">
-                <UiBadge v-for="tech in cloudTech" :key="tech" variant="secondary" class="text-sm">
-                  {{ tech }}
-                </UiBadge>
+              
+              <div>
+                <h4 class="font-medium text-foreground mb-2">Backend</h4>
+                <div class="flex flex-wrap gap-2">
+                  <UiBadge v-for="tech in backendTech" :key="tech" variant="secondary" class="text-sm">
+                    {{ tech }}
+                  </UiBadge>
+                </div>
+              </div>
+              
+              <div>
+                <h4 class="font-medium text-foreground mb-2">Cloud & DevOps</h4>
+                <div class="flex flex-wrap gap-2">
+                  <UiBadge v-for="tech in cloudTech" :key="tech" variant="secondary" class="text-sm">
+                    {{ tech }}
+                  </UiBadge>
+                </div>
               </div>
             </div>
           </div>
