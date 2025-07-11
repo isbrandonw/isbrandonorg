@@ -29,7 +29,14 @@
 
           <!-- Contact Methods -->
           <div class="space-y-6 w-full max-w-md">
-            <div class="flex items-center space-x-4 group bg-card/80 rounded-xl p-4 hover:bg-primary/10 transition-colors">
+            <div 
+              class="flex items-center space-x-4 group bg-card/80 rounded-xl p-4 hover:bg-primary/10 transition-colors cursor-pointer"
+              @click="copyEmail"
+              role="button"
+              tabindex="0"
+              @keydown.enter="copyEmail"
+              @keydown.space.prevent="copyEmail"
+            >
               <div class="p-3 bg-primary/10 rounded-lg group-hover:bg-primary/20 transition-colors">
                 <Icon name="lucide:mail" class="h-6 w-6 text-primary" />
               </div>
@@ -39,7 +46,12 @@
               </div>
             </div>
 
-            <div class="flex items-center space-x-4 group bg-card/80 rounded-xl p-4 hover:bg-primary/10 transition-colors">
+            <a 
+              href="https://www.linkedin.com/in/isbrandon/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="flex items-center space-x-4 group bg-card/80 rounded-xl p-4 hover:bg-primary/10 transition-colors"
+            >
               <div class="p-3 bg-primary/10 rounded-lg group-hover:bg-primary/20 transition-colors">
                 <Icon name="lucide:linkedin" class="h-6 w-6 text-primary" />
               </div>
@@ -47,9 +59,14 @@
                 <h4 class="font-medium text-foreground">LinkedIn</h4>
                 <p class="text-muted-foreground">Connect professionally</p>
               </div>
-            </div>
+            </a>
 
-            <div class="flex items-center space-x-4 group bg-card/80 rounded-xl p-4 hover:bg-primary/10 transition-colors">
+            <a 
+              href="https://github.com/isbrandonw" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="flex items-center space-x-4 group bg-card/80 rounded-xl p-4 hover:bg-primary/10 transition-colors"
+            >
               <div class="p-3 bg-primary/10 rounded-lg group-hover:bg-primary/20 transition-colors">
                 <Icon name="lucide:github" class="h-6 w-6 text-primary" />
               </div>
@@ -57,9 +74,10 @@
                 <h4 class="font-medium text-foreground">GitHub</h4>
                 <p class="text-muted-foreground">Check out my projects</p>
               </div>
-            </div>
+            </a>
 
-            <div class="flex items-center space-x-4 group bg-card/80 rounded-xl p-4 hover:bg-primary/10 transition-colors">
+            <!-- Twitter section commented out -->
+            <!-- <div class="flex items-center space-x-4 group bg-card/80 rounded-xl p-4 hover:bg-primary/10 transition-colors">
               <div class="p-3 bg-primary/10 rounded-lg group-hover:bg-primary/20 transition-colors">
                 <Icon name="lucide:twitter" class="h-6 w-6 text-primary" />
               </div>
@@ -67,7 +85,7 @@
                 <h4 class="font-medium text-foreground">Twitter</h4>
                 <p class="text-muted-foreground">Follow for tech insights</p>
               </div>
-            </div>
+            </div> -->
           </div>
 
           <!-- Response Time -->
@@ -89,4 +107,32 @@
 
 <script lang="ts" setup>
 // Contact form has been extracted to its own component (ContactForm.vue)
+import { toast } from 'vue-sonner';
+
+const copyEmail = async () => {
+  const email = 'brandon@isbrandon.org';
+  
+  try {
+    await navigator.clipboard.writeText(email);
+    // Show success toast
+    toast.success('Email copied to clipboard!', {
+      description: 'brandon@isbrandon.org',
+      duration: 3000
+    });
+  } catch (err) {
+    // Fallback for older browsers
+    const textArea = document.createElement('textarea');
+    textArea.value = email;
+    document.body.appendChild(textArea);
+    textArea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textArea);
+    
+    // Show success toast for fallback too
+    toast.success('Email copied to clipboard!', {
+      description: 'brandon@isbrandon.org',
+      duration: 3000
+    });
+  }
+};
 </script>

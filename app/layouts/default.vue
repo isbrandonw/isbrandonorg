@@ -26,7 +26,12 @@
                 >About</UiNavigationMenuLink>
               </UiNavigationMenuItem>
               <UiNavigationMenuItem>
-                <UiNavigationMenuLink as="NuxtLink" to="/blog" class="nav-link">Blog</UiNavigationMenuLink>
+                <UiNavigationMenuLink 
+                  href="https://isbrandon.info" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  class="nav-link"
+                >Blog</UiNavigationMenuLink>
               </UiNavigationMenuItem>
               <!-- Remove Projects, add GitHub -->
               <UiNavigationMenuItem>
@@ -95,7 +100,14 @@
                 tabindex="0"
                 aria-label="About"
               />
-              <UiDropdownMenuItem as="NuxtLink" to="/blog" title="Blog" icon="lucide:book-open" />
+              <UiDropdownMenuItem 
+                title="Blog" 
+                icon="lucide:book-open" 
+                @click="handleBlogNav"
+                role="button"
+                tabindex="0"
+                aria-label="Blog"
+              />
               <!-- Remove Projects, add GitHub -->
               <UiDropdownMenuItem
                 title="GitHub"
@@ -176,6 +188,10 @@ const handleNav = async (anchor: string) => {
 
 const handleGithubNav = () => {
   window.open('https://github.com/isbrandonw', '_blank', 'noopener');
+};
+
+const handleBlogNav = () => {
+  window.open('https://isbrandon.info', '_blank', 'noopener');
 };
 </script>
 
