@@ -79,7 +79,15 @@
                       <Icon name="lucide:rocket" class="h-5 w-5 text-primary" />
                     </span>
                     <span class="text-base text-muted-foreground">
-                      Continuously learning and building projects that make a real impact across technology
+                      Continuous learning by building projects.
+                    </span>
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="mt-1">
+                      <Icon name="lucide:smile-plus" class="h-5 w-5 text-primary" />
+                    </span>
+                    <span class="text-base text-muted-foreground">
+                      Create meaningful, positive change throughout any technology stack.
                     </span>
                   </li>
                 </ul>
@@ -173,8 +181,8 @@
 
 <script lang="ts" setup>
 const frontendTech = [
-  'React', 'Vue.js', 'TypeScript', 'Next.js', 'Nuxt.js',
-  'Tailwind CSS', 'JavaScript'
+  'Nuxt.js', 'Vue.js', 'JavaScript', 'TypeScript', 'React',
+  'Next.js', 'Tailwind CSS', 'JavaScript', 'Tailwind CSS',
 ];
 
 const backendTech = [

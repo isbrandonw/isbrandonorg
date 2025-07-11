@@ -72,4 +72,17 @@ export default defineNuxtConfig({
     "@pinia/nuxt",
     "v-wave/nuxt",
   ],
+
+  vite: {
+    server: {
+      watch: {
+        usePolling: true,
+        interval: 100,
+        awaitWriteFinish: {
+          stabilityThreshold: 100,
+          pollInterval: 100
+        }
+      }
+    }
+  }
 });

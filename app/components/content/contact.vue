@@ -1,5 +1,5 @@
 <template>
-  <section class="py-16 lg:py-24 bg-background">
+  <section id="contact" class="py-16 lg:py-24 bg-background">
     <UiContainer>
       <!-- Section Header -->
       <div class="flex flex-col items-center mb-16">

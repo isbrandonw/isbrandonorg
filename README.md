@@ -44,6 +44,34 @@ npm build
 npm generate
 ```
 
+## Clean the project during development
+
+```bash
+# Checks for known vulnerabilities
+npm audit
+```
+
+Then review outdated packages
+```bash
+npm outdated
+```
+
+Then update the packages
+
+```bash
+npm update
+```
+
+Then update the packages
+```bash
+npm update
+```
+Or you can use npm-check-updates to update the packages
+```bash
+npx npm-check-updates -u
+npm install
+```
+
 ## Vercel Deployment
 
 This project is configured for static site generation on Vercel:
@@ -65,3 +93,8 @@ Currently no environment variables are required for the basic site functionality
 - 100+ UI components from ui-thing
 - Static site generation ready
 - SEO optimized
+
+## GitHub Profiles
+
+- **Personal:** [sudoHub](https://github.com/sudoHub) — My main open-source and personal projects.
+- **Organization:** [isbrandonw](https://github.com/isbrandonw) — Projects and collaborations under my organization.
